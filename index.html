@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BentoPDF - The Privacy First PDF Toolkit</title>
+    <title>pdf.liamgetreu.com</title>
     <link rel="icon" type="image/png" href="./images/favicon.svg" />
     <link href="/src/css/styles.css" rel="stylesheet" />
   </head>
 
   <body class="antialiased">
-    <nav class="bg-gray-800 border-b border-gray-700 sticky top-0 z-30">
+    <nav class="bg-white border-b border-gray-700 sticky top-0 z-30">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center h-16">
           <div
@@ -21,7 +21,7 @@
               alt="Bento PDF Logo"
               class="h-8 w-8"
             />
-            <span class="text-white font-bold text-xl ml-2">
+            <span class="text-gray-800 font-bold text-xl ml-2">
               <a href="index.html">BentoPDF</a>
             </span>
           </div>
@@ -41,13 +41,13 @@
             <input
               type="text"
               id="search-bar"
-              class="w-full pl-10 pr-4 py-3 bg-gray-700 text-white border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+              class="w-full pl-10 pr-4 py-3 bg-white text-gray-800 border border-gray-600 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
               placeholder="Search for a tool (e.g., 'split', 'organize'...)"
             />
             <span
               class="absolute inset-y-0 right-0 flex items-center rounded-lg pr-2"
             >
-              <kbd id="shortcut" class="bg-gray-800 px-1 rounded-lg"></kbd>
+              <kbd id="shortcut" class="bg-white px-1 rounded-lg"></kbd>
             </span>
           </div>
         </div>
@@ -60,7 +60,7 @@
 
       <div
         id="tool-interface"
-        class="hidden w-full max-w-4xl mx-auto bg-gray-800 rounded-xl shadow-2xl p-6 md:p-8 border border-gray-700"
+        class="hidden w-full max-w-4xl mx-auto bg-white rounded-xl shadow-2xl p-6 md:p-8 border border-gray-700"
       >
         <button
           id="back-to-grid"
@@ -77,10 +77,10 @@
         class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
       >
         <div
-          class="bg-gray-800 p-8 rounded-lg flex flex-col items-center gap-4 border border-gray-700 shadow-xl"
+          class="bg-white p-8 rounded-lg flex flex-col items-center gap-4 border border-gray-700 shadow-xl"
         >
           <div class="solid-spinner"></div>
-          <p id="loader-text" class="text-white text-lg font-medium">
+          <p id="loader-text" class="text-gray-800 text-lg font-medium">
             Processing...
           </p>
         </div>
@@ -91,9 +91,9 @@
         class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
       >
         <div
-          class="bg-gray-800 max-w-sm w-full p-6 rounded-lg border border-gray-700 shadow-xl text-center"
+          class="bg-white max-w-sm w-full p-6 rounded-lg border border-gray-700 shadow-xl text-center"
         >
-          <h3 id="alert-title" class="text-xl font-bold text-white mb-2">
+          <h3 id="alert-title" class="text-xl font-bold text-gray-800 mb-2">
             Alert
           </h3>
           <p id="alert-message" class="text-gray-300 mb-6 whitespace-pre-line">
@@ -101,7 +101,7 @@
           </p>
           <button
             id="alert-ok"
-            class="btn bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700"
+            class="btn bg-indigo-600 text-gray-800 font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700"
           >
             OK
           </button>
@@ -120,13 +120,13 @@
             <div class="flex gap-4">
               <button
                 id="preview-download-btn"
-                class="btn bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700"
+                class="btn bg-indigo-600 text-gray-800 font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700"
               >
                 Download as PDF
               </button>
               <button
                 id="preview-close-btn"
-                class="btn bg-gray-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-gray-700"
+                class="btn bg-white text-gray-800 font-semibold py-2 px-6 rounded-lg hover:bg-white"
               >
                 Close
               </button>
