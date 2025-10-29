@@ -23,7 +23,7 @@ const init = () => {
         // Create a simple nav with just logo on the right
         const simpleNav = document.createElement('nav');
         simpleNav.className =
-          'bg-gray-800 border-b border-gray-700 sticky top-0 z-30';
+          'bg-white border-b border-gray-700 sticky top-0 z-30';
         simpleNav.innerHTML = `
           <div class="container mx-auto px-4">
             <div class="flex justify-start items-center h-16">
@@ -139,7 +139,7 @@ const init = () => {
     category.tools.forEach((tool) => {
       const toolCard = document.createElement('div');
       toolCard.className =
-        'tool-card bg-gray-800 rounded-xl p-4 cursor-pointer flex flex-col items-center justify-center text-center';
+        'tool-card bg-white rounded-xl p-4 cursor-pointer flex flex-col items-center justify-center text-center';
       toolCard.dataset.toolId = tool.id;
 
       const icon = document.createElement('i');
@@ -147,7 +147,7 @@ const init = () => {
       icon.setAttribute('data-lucide', tool.icon);
 
       const toolName = document.createElement('h3');
-      toolName.className = 'font-semibold text-white';
+      toolName.className = 'font-semibold text-black';
       toolName.textContent = tool.name;
 
       toolCard.append(icon, toolName);
