@@ -129,7 +129,7 @@ const init = () => {
     categoryGroup.className = 'category-group col-span-full';
 
     const title = document.createElement('h2');
-    title.className = 'text-xl font-bold text-indigo-400 mb-4 mt-8 first:mt-0';
+    title.className = 'text-xl font-bold text-indigo-600 mb-4 mt-8 first:mt-0';
     title.textContent = category.name;
 
     const toolsContainer = document.createElement('div');
@@ -143,7 +143,7 @@ const init = () => {
       toolCard.dataset.toolId = tool.id;
 
       const icon = document.createElement('i');
-      icon.className = 'w-10 h-10 mb-3 text-indigo-400';
+      icon.className = 'w-10 h-10 mb-3 text-indigo-600';
       icon.setAttribute('data-lucide', tool.icon);
 
       const toolName = document.createElement('h3');
